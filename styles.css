@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+body {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background-color: #EDEEC9;
+}
+
+.container {
+    background-color: #CAFFB9;
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #135350;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #135350;
+    background-color: #CAFFB9;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+header nav a:hover {
+    color: black;
+    background-color: #7BADA2;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CAFFB9;
+    margin: 10px auto;
+    width: 80%;
+}
+
+footer {
+    background-color: #135350;
+    color: #CAFFB9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:600px) {
+
+    header nav {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    main {
+        display: flex;
+        gap: 70px;
+        margin: 0 30px
+    }
+
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+}
+
+.send-button-container {
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    padding-bottom: 7px;
+}
+
+@media (min-width:600px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .send-button-container {
+        grid-column: span 2;
+    }
+
+}
